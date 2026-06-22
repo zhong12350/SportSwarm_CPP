@@ -1,0 +1,61 @@
+seed: 42
+
+court:
+  preset: tennis_court
+  cell_size_m: 0.5
+
+blf:
+  source: gaussian
+  gaussians:
+    - center: [20.0, 2.5]
+      sigma: [4.0, 2.0]
+      amplitude: 1.0
+    - center: [20.0, 8.5]
+      sigma: [4.0, 2.0]
+      amplitude: 1.0
+    - center: [4.0, 5.5]
+      sigma: [2.0, 3.0]
+      amplitude: 0.7
+  normalize: true
+
+balls:
+  count: 25
+  mode: blf
+  min_separation_m: 0.8
+
+robots:
+  speed_mps: 0.5
+  pickup_radius_m: 0.3
+  counts: [1, 2, 4]
+  cost_per_robot: 1.0
+
+simulation:
+  dt_s: 0.1
+  max_time_s: 300.0
+  coverage_threshold: 0.95
+  gmm_realloc_interval_s: 4.0
+
+deployment:
+  mode: lloyd
+
+players:
+  enabled: false
+
+cvar:
+  enabled: false
+
+methods:
+  - single_greedy
+  - multi_greedy
+  - uniform_cpp
+  - blf_weighted_cpp
+  - blf_informed_deployment
+  - gmm_swarm
+
+experiment:
+  batch_seeds: [42, 43, 44, 45, 46]
+
+output:
+  figures_dir: outputs/figures/tennis
+  results_dir: outputs/results/tennis
+  dpi: 150

@@ -1,0 +1,76 @@
+seed: 42
+
+court:
+  preset: football_7v7
+  cell_size_m: 1.0
+
+blf:
+  source: hybrid
+  statsbomb_dir: data/statsbomb_sample
+  tactical_style: all
+  gaussians:
+    - center: [55.0, 8.0]
+      sigma: [8.0, 5.0]
+      amplitude: 1.0
+    - center: [55.0, 32.0]
+      sigma: [8.0, 5.0]
+      amplitude: 0.85
+    - center: [8.0, 20.0]
+      sigma: [6.0, 10.0]
+      amplitude: 0.7
+  normalize: true
+
+balls:
+  count: 40
+  mode: blf
+  min_separation_m: 1.5
+
+robots:
+  speed_mps: 0.8
+  pickup_radius_m: 0.4
+  counts: [1, 2, 4, 8]
+  cost_per_robot: 1.0
+
+simulation:
+  dt_s: 0.1
+  max_time_s: 600.0
+  coverage_threshold: 0.95
+  gmm_realloc_interval_s: 5.0
+
+deployment:
+  mode: lloyd
+
+gmm:
+  max_components: 8
+  min_samples_per_component: 2
+
+players:
+  enabled: true
+  count: 3
+  speed_mps: 1.2
+  radius_m: 0.6
+  sideline: both
+
+cvar:
+  enabled: true
+  alpha: 0.9
+  num_scenarios: 16
+  horizon_s: 2.0
+
+methods:
+  - single_greedy
+  - multi_greedy
+  - uniform_cpp
+  - blf_weighted_cpp
+  - voronoi_assignment
+  - blf_informed_deployment
+  - gmm_swarm
+  - sportswarm_full
+
+experiment:
+  batch_seeds: [42, 43, 44, 45, 46, 47, 48, 49, 50, 51]
+
+output:
+  figures_dir: outputs/figures
+  results_dir: outputs/results
+  dpi: 150

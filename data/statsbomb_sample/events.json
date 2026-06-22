@@ -1,0 +1,4802 @@
+[
+  {
+    "id": 0,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      120,
+      15.75
+    ],
+    "out": true
+  },
+  {
+    "id": 1,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      114.25,
+      3.66
+    ],
+    "out": true
+  },
+  {
+    "id": 2,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      120,
+      15.78
+    ],
+    "out": true
+  },
+  {
+    "id": 3,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      61.83,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 4,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      114.93,
+      66.52
+    ],
+    "out": true
+  },
+  {
+    "id": 5,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      58.75,
+      4.94
+    ],
+    "out": true
+  },
+  {
+    "id": 6,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      5.13,
+      43.51
+    ],
+    "out": true
+  },
+  {
+    "id": 7,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      59.89,
+      79.78
+    ],
+    "out": true
+  },
+  {
+    "id": 8,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      120,
+      14.02
+    ],
+    "out": true
+  },
+  {
+    "id": 9,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      62.85,
+      74.25
+    ],
+    "out": true
+  },
+  {
+    "id": 10,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      120,
+      16.23
+    ],
+    "out": true
+  },
+  {
+    "id": 11,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      120,
+      60.63
+    ],
+    "out": true
+  },
+  {
+    "id": 12,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      116.12,
+      68.0
+    ],
+    "out": true
+  },
+  {
+    "id": 13,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      116.1,
+      12.67
+    ],
+    "out": true
+  },
+  {
+    "id": 14,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      51.22,
+      14.45
+    ],
+    "out": true
+  },
+  {
+    "id": 15,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      60.67,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 16,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      118.13,
+      16.52
+    ],
+    "out": true
+  },
+  {
+    "id": 17,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      120,
+      28.93
+    ],
+    "out": true
+  },
+  {
+    "id": 18,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      115.75,
+      60.01
+    ],
+    "out": true
+  },
+  {
+    "id": 19,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      117.72,
+      69.5
+    ],
+    "out": true
+  },
+  {
+    "id": 20,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      55.23,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 21,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      116.26,
+      64.84
+    ],
+    "out": true
+  },
+  {
+    "id": 22,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      113.06,
+      57.37
+    ],
+    "out": true
+  },
+  {
+    "id": 23,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      50.19,
+      15.54
+    ],
+    "out": true
+  },
+  {
+    "id": 24,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      60.39,
+      77.3
+    ],
+    "out": true
+  },
+  {
+    "id": 25,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      60.04,
+      67.73
+    ],
+    "out": true
+  },
+  {
+    "id": 26,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      0,
+      42.63
+    ],
+    "out": true
+  },
+  {
+    "id": 27,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      60.36,
+      70.88
+    ],
+    "out": true
+  },
+  {
+    "id": 28,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      4.59,
+      34.01
+    ],
+    "out": true
+  },
+  {
+    "id": 29,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      111.27,
+      62.45
+    ],
+    "out": true
+  },
+  {
+    "id": 30,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      59.64,
+      79.06
+    ],
+    "out": true
+  },
+  {
+    "id": 31,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      2.2,
+      44.44
+    ],
+    "out": true
+  },
+  {
+    "id": 32,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      117.17,
+      4.03
+    ],
+    "out": true
+  },
+  {
+    "id": 33,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      120,
+      69.92
+    ],
+    "out": true
+  },
+  {
+    "id": 34,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      62.92,
+      73.48
+    ],
+    "out": true
+  },
+  {
+    "id": 35,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      60.2,
+      68.82
+    ],
+    "out": true
+  },
+  {
+    "id": 36,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      65.79,
+      1.74
+    ],
+    "out": true
+  },
+  {
+    "id": 37,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      57.12,
+      79.36
+    ],
+    "out": true
+  },
+  {
+    "id": 38,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      115.54,
+      12.71
+    ],
+    "out": true
+  },
+  {
+    "id": 39,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      119.15,
+      27.92
+    ],
+    "out": true
+  },
+  {
+    "id": 40,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      60.45,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 41,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      116.62,
+      52.76
+    ],
+    "out": true
+  },
+  {
+    "id": 42,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      60.92,
+      0
+    ],
+    "out": true
+  },
+  {
+    "id": 43,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      57.49,
+      6.9
+    ],
+    "out": true
+  },
+  {
+    "id": 44,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      112.67,
+      0
+    ],
+    "out": true
+  },
+  {
+    "id": 45,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      2.6,
+      37.26
+    ],
+    "out": true
+  },
+  {
+    "id": 46,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      115.15,
+      67.29
+    ],
+    "out": true
+  },
+  {
+    "id": 47,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      62.81,
+      0
+    ],
+    "out": true
+  },
+  {
+    "id": 48,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      65.43,
+      64.44
+    ],
+    "out": true
+  },
+  {
+    "id": 49,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      120,
+      70.98
+    ],
+    "out": true
+  },
+  {
+    "id": 50,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      118.13,
+      15.34
+    ],
+    "out": true
+  },
+  {
+    "id": 51,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      0,
+      47.01
+    ],
+    "out": true
+  },
+  {
+    "id": 52,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      119.03,
+      68.91
+    ],
+    "out": true
+  },
+  {
+    "id": 53,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      63.22,
+      79.95
+    ],
+    "out": true
+  },
+  {
+    "id": 54,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      52.17,
+      1.79
+    ],
+    "out": true
+  },
+  {
+    "id": 55,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      62.25,
+      79.86
+    ],
+    "out": true
+  },
+  {
+    "id": 56,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      110.16,
+      73.13
+    ],
+    "out": true
+  },
+  {
+    "id": 57,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      61.6,
+      78.61
+    ],
+    "out": true
+  },
+  {
+    "id": 58,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      50.75,
+      76.0
+    ],
+    "out": true
+  },
+  {
+    "id": 59,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      2.29,
+      46.01
+    ],
+    "out": true
+  },
+  {
+    "id": 60,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      57.3,
+      11.16
+    ],
+    "out": true
+  },
+  {
+    "id": 61,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      56.27,
+      0
+    ],
+    "out": true
+  },
+  {
+    "id": 62,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      60.72,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 63,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      120,
+      11.04
+    ],
+    "out": true
+  },
+  {
+    "id": 64,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      0,
+      28.56
+    ],
+    "out": true
+  },
+  {
+    "id": 65,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      58.2,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 66,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      117.24,
+      77.55
+    ],
+    "out": true
+  },
+  {
+    "id": 67,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      1.45,
+      44.04
+    ],
+    "out": true
+  },
+  {
+    "id": 68,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      51.34,
+      78.94
+    ],
+    "out": true
+  },
+  {
+    "id": 69,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      113.0,
+      6.57
+    ],
+    "out": true
+  },
+  {
+    "id": 70,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      115.97,
+      61.45
+    ],
+    "out": true
+  },
+  {
+    "id": 71,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      58.19,
+      0.91
+    ],
+    "out": true
+  },
+  {
+    "id": 72,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      110.72,
+      61.78
+    ],
+    "out": true
+  },
+  {
+    "id": 73,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      62.39,
+      5.7
+    ],
+    "out": true
+  },
+  {
+    "id": 74,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      120,
+      12.56
+    ],
+    "out": true
+  },
+  {
+    "id": 75,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      3.56,
+      27.77
+    ],
+    "out": true
+  },
+  {
+    "id": 76,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      120,
+      52.67
+    ],
+    "out": true
+  },
+  {
+    "id": 77,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      120,
+      27.32
+    ],
+    "out": true
+  },
+  {
+    "id": 78,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      117.26,
+      75.5
+    ],
+    "out": true
+  },
+  {
+    "id": 79,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      61.27,
+      12.89
+    ],
+    "out": true
+  },
+  {
+    "id": 80,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      5.47,
+      29.02
+    ],
+    "out": true
+  },
+  {
+    "id": 81,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      56.22,
+      12.57
+    ],
+    "out": true
+  },
+  {
+    "id": 82,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      0,
+      45.76
+    ],
+    "out": true
+  },
+  {
+    "id": 83,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      120,
+      25.55
+    ],
+    "out": true
+  },
+  {
+    "id": 84,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      120,
+      19.03
+    ],
+    "out": true
+  },
+  {
+    "id": 85,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      56.24,
+      0
+    ],
+    "out": true
+  },
+  {
+    "id": 86,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      60.44,
+      79.68
+    ],
+    "out": true
+  },
+  {
+    "id": 87,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      64.44,
+      74.64
+    ],
+    "out": true
+  },
+  {
+    "id": 88,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      117.0,
+      66.72
+    ],
+    "out": true
+  },
+  {
+    "id": 89,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      56.96,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 90,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      0,
+      39.6
+    ],
+    "out": true
+  },
+  {
+    "id": 91,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      62.91,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 92,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      115.47,
+      61.63
+    ],
+    "out": true
+  },
+  {
+    "id": 93,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      1.03,
+      46.19
+    ],
+    "out": true
+  },
+  {
+    "id": 94,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      54.39,
+      5.22
+    ],
+    "out": true
+  },
+  {
+    "id": 95,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      116.23,
+      60.88
+    ],
+    "out": true
+  },
+  {
+    "id": 96,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      10.21,
+      48.19
+    ],
+    "out": true
+  },
+  {
+    "id": 97,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      118.79,
+      61.82
+    ],
+    "out": true
+  },
+  {
+    "id": 98,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      60.91,
+      76.11
+    ],
+    "out": true
+  },
+  {
+    "id": 99,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      62.11,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 100,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      120,
+      72.32
+    ],
+    "out": true
+  },
+  {
+    "id": 101,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      61.41,
+      12.63
+    ],
+    "out": true
+  },
+  {
+    "id": 102,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      62.88,
+      3.41
+    ],
+    "out": true
+  },
+  {
+    "id": 103,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      62.99,
+      6.98
+    ],
+    "out": true
+  },
+  {
+    "id": 104,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      51.92,
+      69.71
+    ],
+    "out": true
+  },
+  {
+    "id": 105,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      63.35,
+      66.38
+    ],
+    "out": true
+  },
+  {
+    "id": 106,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      57.78,
+      79.18
+    ],
+    "out": true
+  },
+  {
+    "id": 107,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      59.83,
+      6.51
+    ],
+    "out": true
+  },
+  {
+    "id": 108,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      57.06,
+      78.43
+    ],
+    "out": true
+  },
+  {
+    "id": 109,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      2.35,
+      45.4
+    ],
+    "out": true
+  },
+  {
+    "id": 110,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      120,
+      69.79
+    ],
+    "out": true
+  },
+  {
+    "id": 111,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      114.92,
+      17.74
+    ],
+    "out": true
+  },
+  {
+    "id": 112,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      119.98,
+      59.83
+    ],
+    "out": true
+  },
+  {
+    "id": 113,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      120,
+      6.99
+    ],
+    "out": true
+  },
+  {
+    "id": 114,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      0.8,
+      45.69
+    ],
+    "out": true
+  },
+  {
+    "id": 115,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      59.92,
+      70.46
+    ],
+    "out": true
+  },
+  {
+    "id": 116,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      114.82,
+      65.35
+    ],
+    "out": true
+  },
+  {
+    "id": 117,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      0,
+      30.63
+    ],
+    "out": true
+  },
+  {
+    "id": 118,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      120,
+      64.1
+    ],
+    "out": true
+  },
+  {
+    "id": 119,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      59.13,
+      75.85
+    ],
+    "out": true
+  },
+  {
+    "id": 120,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      61.29,
+      6.24
+    ],
+    "out": true
+  },
+  {
+    "id": 121,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      56.86,
+      10.99
+    ],
+    "out": true
+  },
+  {
+    "id": 122,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      59.98,
+      4.48
+    ],
+    "out": true
+  },
+  {
+    "id": 123,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      69.33,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 124,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      119.13,
+      6.45
+    ],
+    "out": true
+  },
+  {
+    "id": 125,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      120,
+      57.92
+    ],
+    "out": true
+  },
+  {
+    "id": 126,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      115.42,
+      13.35
+    ],
+    "out": true
+  },
+  {
+    "id": 127,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      109.9,
+      55.46
+    ],
+    "out": true
+  },
+  {
+    "id": 128,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      2.71,
+      40.86
+    ],
+    "out": true
+  },
+  {
+    "id": 129,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      62.48,
+      0.57
+    ],
+    "out": true
+  },
+  {
+    "id": 130,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      120,
+      71.17
+    ],
+    "out": true
+  },
+  {
+    "id": 131,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      119.48,
+      7.57
+    ],
+    "out": true
+  },
+  {
+    "id": 132,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      59.2,
+      0.07
+    ],
+    "out": true
+  },
+  {
+    "id": 133,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      120,
+      5.96
+    ],
+    "out": true
+  },
+  {
+    "id": 134,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      58.87,
+      0
+    ],
+    "out": true
+  },
+  {
+    "id": 135,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      0,
+      31.03
+    ],
+    "out": true
+  },
+  {
+    "id": 136,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      62.46,
+      0
+    ],
+    "out": true
+  },
+  {
+    "id": 137,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      118.83,
+      62.77
+    ],
+    "out": true
+  },
+  {
+    "id": 138,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      54.62,
+      0
+    ],
+    "out": true
+  },
+  {
+    "id": 139,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      61.5,
+      0
+    ],
+    "out": true
+  },
+  {
+    "id": 140,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      0,
+      50.42
+    ],
+    "out": true
+  },
+  {
+    "id": 141,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      69.71,
+      78.93
+    ],
+    "out": true
+  },
+  {
+    "id": 142,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      53.28,
+      2.72
+    ],
+    "out": true
+  },
+  {
+    "id": 143,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      59.29,
+      2.36
+    ],
+    "out": true
+  },
+  {
+    "id": 144,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      58.78,
+      0
+    ],
+    "out": true
+  },
+  {
+    "id": 145,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      56.53,
+      0.18
+    ],
+    "out": true
+  },
+  {
+    "id": 146,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      56.97,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 147,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      2.78,
+      49.52
+    ],
+    "out": true
+  },
+  {
+    "id": 148,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      118.96,
+      71.75
+    ],
+    "out": true
+  },
+  {
+    "id": 149,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      59.62,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 150,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      115.82,
+      68.9
+    ],
+    "out": true
+  },
+  {
+    "id": 151,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      3.29,
+      40.57
+    ],
+    "out": true
+  },
+  {
+    "id": 152,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      60.5,
+      2.57
+    ],
+    "out": true
+  },
+  {
+    "id": 153,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      57.62,
+      3.4
+    ],
+    "out": true
+  },
+  {
+    "id": 154,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      61.11,
+      3.45
+    ],
+    "out": true
+  },
+  {
+    "id": 155,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      59.09,
+      76.55
+    ],
+    "out": true
+  },
+  {
+    "id": 156,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      61.6,
+      77.2
+    ],
+    "out": true
+  },
+  {
+    "id": 157,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      60.49,
+      69.84
+    ],
+    "out": true
+  },
+  {
+    "id": 158,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      118.63,
+      59.21
+    ],
+    "out": true
+  },
+  {
+    "id": 159,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      63.41,
+      77.68
+    ],
+    "out": true
+  },
+  {
+    "id": 160,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      61.77,
+      77.32
+    ],
+    "out": true
+  },
+  {
+    "id": 161,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      117.85,
+      67.46
+    ],
+    "out": true
+  },
+  {
+    "id": 162,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      120,
+      20.12
+    ],
+    "out": true
+  },
+  {
+    "id": 163,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      5.23,
+      41.01
+    ],
+    "out": true
+  },
+  {
+    "id": 164,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      114.52,
+      2.42
+    ],
+    "out": true
+  },
+  {
+    "id": 165,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      55.07,
+      66.14
+    ],
+    "out": true
+  },
+  {
+    "id": 166,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      60.36,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 167,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      120,
+      66.57
+    ],
+    "out": true
+  },
+  {
+    "id": 168,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      63.79,
+      74.93
+    ],
+    "out": true
+  },
+  {
+    "id": 169,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      0,
+      26.36
+    ],
+    "out": true
+  },
+  {
+    "id": 170,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      61.0,
+      2.83
+    ],
+    "out": true
+  },
+  {
+    "id": 171,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      1.27,
+      39.17
+    ],
+    "out": true
+  },
+  {
+    "id": 172,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      0,
+      35.31
+    ],
+    "out": true
+  },
+  {
+    "id": 173,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      4.21,
+      47.23
+    ],
+    "out": true
+  },
+  {
+    "id": 174,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      113.97,
+      16.15
+    ],
+    "out": true
+  },
+  {
+    "id": 175,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      115.04,
+      73.09
+    ],
+    "out": true
+  },
+  {
+    "id": 176,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      61.67,
+      78.59
+    ],
+    "out": true
+  },
+  {
+    "id": 177,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      120,
+      13.86
+    ],
+    "out": true
+  },
+  {
+    "id": 178,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      58.7,
+      78.47
+    ],
+    "out": true
+  },
+  {
+    "id": 179,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      60.23,
+      69.6
+    ],
+    "out": true
+  },
+  {
+    "id": 180,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      117.77,
+      68.16
+    ],
+    "out": true
+  },
+  {
+    "id": 181,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      67.78,
+      13.15
+    ],
+    "out": true
+  },
+  {
+    "id": 182,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      117.14,
+      59.99
+    ],
+    "out": true
+  },
+  {
+    "id": 183,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      119.22,
+      26.37
+    ],
+    "out": true
+  },
+  {
+    "id": 184,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      111.65,
+      65.1
+    ],
+    "out": true
+  },
+  {
+    "id": 185,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      65.69,
+      0
+    ],
+    "out": true
+  },
+  {
+    "id": 186,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      61.6,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 187,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      120,
+      61.36
+    ],
+    "out": true
+  },
+  {
+    "id": 188,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      6.36,
+      37.13
+    ],
+    "out": true
+  },
+  {
+    "id": 189,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      4.75,
+      33.26
+    ],
+    "out": true
+  },
+  {
+    "id": 190,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      56.43,
+      0.67
+    ],
+    "out": true
+  },
+  {
+    "id": 191,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      53.34,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 192,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      115.37,
+      63.09
+    ],
+    "out": true
+  },
+  {
+    "id": 193,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      1.79,
+      30.63
+    ],
+    "out": true
+  },
+  {
+    "id": 194,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      116.9,
+      65.05
+    ],
+    "out": true
+  },
+  {
+    "id": 195,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      7.56,
+      31.08
+    ],
+    "out": true
+  },
+  {
+    "id": 196,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      117.29,
+      8.93
+    ],
+    "out": true
+  },
+  {
+    "id": 197,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      107.64,
+      18.02
+    ],
+    "out": true
+  },
+  {
+    "id": 198,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      55.4,
+      0
+    ],
+    "out": true
+  },
+  {
+    "id": 199,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      57.46,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 200,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      60.75,
+      0.83
+    ],
+    "out": true
+  },
+  {
+    "id": 201,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      8.63,
+      39.84
+    ],
+    "out": true
+  },
+  {
+    "id": 202,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      112.23,
+      18.2
+    ],
+    "out": true
+  },
+  {
+    "id": 203,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      2.95,
+      35.21
+    ],
+    "out": true
+  },
+  {
+    "id": 204,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      112.93,
+      63.49
+    ],
+    "out": true
+  },
+  {
+    "id": 205,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      120,
+      70.78
+    ],
+    "out": true
+  },
+  {
+    "id": 206,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      61.9,
+      0.26
+    ],
+    "out": true
+  },
+  {
+    "id": 207,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      0,
+      42.24
+    ],
+    "out": true
+  },
+  {
+    "id": 208,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      0.97,
+      36.84
+    ],
+    "out": true
+  },
+  {
+    "id": 209,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      56.89,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 210,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      61.5,
+      0
+    ],
+    "out": true
+  },
+  {
+    "id": 211,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      63.07,
+      5.65
+    ],
+    "out": true
+  },
+  {
+    "id": 212,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      5.34,
+      39.77
+    ],
+    "out": true
+  },
+  {
+    "id": 213,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      10.0,
+      40.61
+    ],
+    "out": true
+  },
+  {
+    "id": 214,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      59.77,
+      66.66
+    ],
+    "out": true
+  },
+  {
+    "id": 215,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      115.08,
+      61.52
+    ],
+    "out": true
+  },
+  {
+    "id": 216,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      0,
+      31.38
+    ],
+    "out": true
+  },
+  {
+    "id": 217,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      120,
+      10.07
+    ],
+    "out": true
+  },
+  {
+    "id": 218,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      112.3,
+      10.33
+    ],
+    "out": true
+  },
+  {
+    "id": 219,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      1.96,
+      36.27
+    ],
+    "out": true
+  },
+  {
+    "id": 220,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      56.81,
+      77.95
+    ],
+    "out": true
+  },
+  {
+    "id": 221,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      63.28,
+      0.98
+    ],
+    "out": true
+  },
+  {
+    "id": 222,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      116.45,
+      15.47
+    ],
+    "out": true
+  },
+  {
+    "id": 223,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      67.08,
+      0
+    ],
+    "out": true
+  },
+  {
+    "id": 224,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      64.94,
+      2.65
+    ],
+    "out": true
+  },
+  {
+    "id": 225,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      0,
+      34.35
+    ],
+    "out": true
+  },
+  {
+    "id": 226,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      112.53,
+      66.49
+    ],
+    "out": true
+  },
+  {
+    "id": 227,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      60.26,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 228,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      0.82,
+      37.59
+    ],
+    "out": true
+  },
+  {
+    "id": 229,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      3.99,
+      39.92
+    ],
+    "out": true
+  },
+  {
+    "id": 230,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      54.29,
+      4.57
+    ],
+    "out": true
+  },
+  {
+    "id": 231,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      54.25,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 232,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      55.74,
+      0
+    ],
+    "out": true
+  },
+  {
+    "id": 233,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      5.77,
+      41.18
+    ],
+    "out": true
+  },
+  {
+    "id": 234,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      6.94,
+      45.34
+    ],
+    "out": true
+  },
+  {
+    "id": 235,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      115.92,
+      17.32
+    ],
+    "out": true
+  },
+  {
+    "id": 236,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      115.01,
+      7.66
+    ],
+    "out": true
+  },
+  {
+    "id": 237,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      118.68,
+      10.64
+    ],
+    "out": true
+  },
+  {
+    "id": 238,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      120,
+      69.27
+    ],
+    "out": true
+  },
+  {
+    "id": 239,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      116.93,
+      67.99
+    ],
+    "out": true
+  },
+  {
+    "id": 240,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      3.41,
+      37.39
+    ],
+    "out": true
+  },
+  {
+    "id": 241,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      120,
+      72.67
+    ],
+    "out": true
+  },
+  {
+    "id": 242,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      117.39,
+      64.43
+    ],
+    "out": true
+  },
+  {
+    "id": 243,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      53.47,
+      0.38
+    ],
+    "out": true
+  },
+  {
+    "id": 244,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      0.08,
+      39.76
+    ],
+    "out": true
+  },
+  {
+    "id": 245,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      58.17,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 246,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      62.42,
+      0
+    ],
+    "out": true
+  },
+  {
+    "id": 247,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      61.47,
+      3.1
+    ],
+    "out": true
+  },
+  {
+    "id": 248,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      120,
+      20.98
+    ],
+    "out": true
+  },
+  {
+    "id": 249,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      0,
+      45.51
+    ],
+    "out": true
+  },
+  {
+    "id": 250,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      118.53,
+      12.15
+    ],
+    "out": true
+  },
+  {
+    "id": 251,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      110.42,
+      70.34
+    ],
+    "out": true
+  },
+  {
+    "id": 252,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      58.46,
+      3.35
+    ],
+    "out": true
+  },
+  {
+    "id": 253,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      0.38,
+      42.45
+    ],
+    "out": true
+  },
+  {
+    "id": 254,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      118.87,
+      12.69
+    ],
+    "out": true
+  },
+  {
+    "id": 255,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      3.93,
+      32.92
+    ],
+    "out": true
+  },
+  {
+    "id": 256,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      111.11,
+      21.49
+    ],
+    "out": true
+  },
+  {
+    "id": 257,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      120,
+      13.4
+    ],
+    "out": true
+  },
+  {
+    "id": 258,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      61.36,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 259,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      115.0,
+      21.18
+    ],
+    "out": true
+  },
+  {
+    "id": 260,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      60.63,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 261,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      55.66,
+      72.37
+    ],
+    "out": true
+  },
+  {
+    "id": 262,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      5.14,
+      40.87
+    ],
+    "out": true
+  },
+  {
+    "id": 263,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      10.07,
+      40.46
+    ],
+    "out": true
+  },
+  {
+    "id": 264,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      120,
+      21.61
+    ],
+    "out": true
+  },
+  {
+    "id": 265,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      60.91,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 266,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      0.66,
+      44.92
+    ],
+    "out": true
+  },
+  {
+    "id": 267,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      120,
+      23.34
+    ],
+    "out": true
+  },
+  {
+    "id": 268,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      0,
+      42.21
+    ],
+    "out": true
+  },
+  {
+    "id": 269,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      3.03,
+      47.02
+    ],
+    "out": true
+  },
+  {
+    "id": 270,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      0,
+      32.76
+    ],
+    "out": true
+  },
+  {
+    "id": 271,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      120,
+      32.02
+    ],
+    "out": true
+  },
+  {
+    "id": 272,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      8.43,
+      36.55
+    ],
+    "out": true
+  },
+  {
+    "id": 273,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      5.42,
+      44.82
+    ],
+    "out": true
+  },
+  {
+    "id": 274,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      57.17,
+      1.12
+    ],
+    "out": true
+  },
+  {
+    "id": 275,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      9.16,
+      45.22
+    ],
+    "out": true
+  },
+  {
+    "id": 276,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      67.01,
+      0
+    ],
+    "out": true
+  },
+  {
+    "id": 277,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      55.28,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 278,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      63.51,
+      2.69
+    ],
+    "out": true
+  },
+  {
+    "id": 279,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      54.07,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 280,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      61.67,
+      0
+    ],
+    "out": true
+  },
+  {
+    "id": 281,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      67.12,
+      80
+    ],
+    "out": true
+  },
+  {
+    "id": 282,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      116.79,
+      68.16
+    ],
+    "out": true
+  },
+  {
+    "id": 283,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      51.32,
+      77.18
+    ],
+    "out": true
+  },
+  {
+    "id": 284,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      118.19,
+      68.36
+    ],
+    "out": true
+  },
+  {
+    "id": 285,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      118.37,
+      56.26
+    ],
+    "out": true
+  },
+  {
+    "id": 286,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      54.98,
+      3.74
+    ],
+    "out": true
+  },
+  {
+    "id": 287,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      52.69,
+      64.22
+    ],
+    "out": true
+  },
+  {
+    "id": 288,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      2.88,
+      41.83
+    ],
+    "out": true
+  },
+  {
+    "id": 289,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      0,
+      36.96
+    ],
+    "out": true
+  },
+  {
+    "id": 290,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      63.73,
+      3.35
+    ],
+    "out": true
+  },
+  {
+    "id": 291,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Shot"
+      }
+    },
+    "location": [
+      114.43,
+      10.28
+    ],
+    "out": true
+  },
+  {
+    "id": 292,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Cross"
+      }
+    },
+    "location": [
+      111.07,
+      18.4
+    ],
+    "out": true
+  },
+  {
+    "id": 293,
+    "type": {
+      "name": "Miscontrol"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      57.74,
+      78.52
+    ],
+    "out": true
+  },
+  {
+    "id": 294,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      120,
+      4.39
+    ],
+    "out": true
+  },
+  {
+    "id": 295,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      59.31,
+      76.65
+    ],
+    "out": true
+  },
+  {
+    "id": 296,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Pass"
+      }
+    },
+    "location": [
+      54.57,
+      0.76
+    ],
+    "out": true
+  },
+  {
+    "id": 297,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      0,
+      46.73
+    ],
+    "out": true
+  },
+  {
+    "id": 298,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Block"
+      }
+    },
+    "location": [
+      3.63,
+      41.08
+    ],
+    "out": true
+  },
+  {
+    "id": 299,
+    "type": {
+      "name": "Out"
+    },
+    "pass": {
+      "type": {
+        "name": "Clearance"
+      }
+    },
+    "location": [
+      1.04,
+      31.35
+    ],
+    "out": true
+  }
+]
