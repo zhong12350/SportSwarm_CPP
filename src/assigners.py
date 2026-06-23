@@ -9,7 +9,7 @@ from sklearn.mixture import GaussianMixture
 from src.coverage import init_coverage_paths
 from src.fields import BallLandingField
 from src.geometry import Ball, Court, Robot, manhattan
-from src.gmm import fit_gmm_to_balls, pick_ball_in_component
+from src.gmm import assign_robot_components, pick_ball_in_component
 
 
 class BaseAssigner(ABC):
@@ -107,6 +107,9 @@ class BLFInformedAssigner(MultiGreedyAssigner):
 
 
 class UniformCPPAssigner(BaseAssigner):
+    def __init__(self) -> None:
+        self._blf: BallLandingField | None = None
+
     @property
     def method_name(self) -> str:
         return "uniform_cpp"
@@ -118,6 +121,7 @@ class UniformCPPAssigner(BaseAssigner):
         blf: BallLandingField | None = None,
         num_robots: int = 1,
     ) -> None:
+        self._blf = blf
         paths = init_coverage_paths(court, len(robots), blf_weighted=False)
         for robot, wps in zip(robots, paths):
             robot.waypoint_queue = list(wps)
@@ -131,12 +135,22 @@ class UniformCPPAssigner(BaseAssigner):
     ) -> Ball | None:
         if not available:
             return None
-        if not robot.coverage_complete and not robot.waypoint_queue:
-            return None
+        if robot.waypoint_queue:
+            wx, wy = robot.waypoint_queue[0]
+            return min(
+                available,
+                key=lambda b: (
+                    0.65 * manhattan((robot.x, robot.y), (b.x, b.y))
+                    + 0.35 * manhattan((wx, wy), (b.x, b.y))
+                ),
+            )
         return min(available, key=lambda b: manhattan((robot.x, robot.y), (b.x, b.y)))
 
 
 class BLFWeightedCPPAssigner(BaseAssigner):
+    def __init__(self) -> None:
+        self._blf: BallLandingField | None = None
+
     @property
     def method_name(self) -> str:
         return "blf_weighted_cpp"
@@ -148,6 +162,7 @@ class BLFWeightedCPPAssigner(BaseAssigner):
         blf: BallLandingField | None = None,
         num_robots: int = 1,
     ) -> None:
+        self._blf = blf
         paths = init_coverage_paths(
             court, len(robots), blf=blf, blf_weighted=True
         )
@@ -163,15 +178,23 @@ class BLFWeightedCPPAssigner(BaseAssigner):
     ) -> Ball | None:
         if not available:
             return None
-        if not robot.coverage_complete and not robot.waypoint_queue:
-            return None
-        return min(available, key=lambda b: manhattan((robot.x, robot.y), (b.x, b.y)))
+        if self._blf is None:
+            return min(available, key=lambda b: manhattan((robot.x, robot.y), (b.x, b.y)))
+
+        def score(ball: Ball) -> float:
+            travel = manhattan((robot.x, robot.y), (ball.x, ball.y))
+            waypoint = 0.0
+            if robot.waypoint_queue:
+                waypoint = manhattan(robot.waypoint_queue[0], (ball.x, ball.y))
+            intensity = self._blf.intensity(ball.x, ball.y)
+            return 0.9 * travel + 0.1 * waypoint - 3.0 * intensity
+
+        return min(available, key=score)
 
 
 class GMMSwarmAssigner(BaseAssigner):
     def __init__(self) -> None:
         self._gmm: GaussianMixture | None = None
-        self._centers: list[tuple[float, float]] | None = None
 
     @property
     def method_name(self) -> str:
@@ -186,9 +209,7 @@ class GMMSwarmAssigner(BaseAssigner):
     ) -> None:
         self._gmm = gmm
         if gmm is not None:
-            self._centers = [
-                (float(c[0]), float(c[1])) for c in gmm.means_
-            ]
+            assign_robot_components(robots, gmm)
 
     def pick_ball(
         self,
@@ -196,15 +217,7 @@ class GMMSwarmAssigner(BaseAssigner):
         available: list[Ball],
         anchors: list[tuple[float, float]],
     ) -> Ball | None:
-        centers = (
-            [[c[0], c[1]] for c in self._centers]
-            if self._centers
-            else None
-        )
-        import numpy as np
-
-        arr = np.array(centers) if centers else None
-        return pick_ball_in_component(robot, available, arr)
+        return pick_ball_in_component(robot, available, self._gmm)
 
 
 class SportSwarmFullAssigner(GMMSwarmAssigner):

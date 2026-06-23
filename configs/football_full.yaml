@@ -46,16 +46,17 @@ gmm:
 
 players:
   enabled: true
-  count: 3
-  speed_mps: 1.2
-  radius_m: 0.6
-  sideline: both
+  count: 8
+  speed_mps: 0.7
+  radius_m: 1.0
+  sideline: middle
 
 cvar:
   enabled: true
   alpha: 0.9
-  num_scenarios: 16
-  horizon_s: 2.0
+  num_scenarios: 24
+  horizon_s: 3.0
+  collision_penalty: 100.0
 
 methods:
   - single_greedy

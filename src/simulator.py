@@ -97,6 +97,9 @@ def run_simulation(
         if use_gmm and t - last_realloc >= sim_cfg.gmm_realloc_interval_s:
             gmm = fit_gmm_to_balls(balls_sim, len(robots), config.gmm)
             assigner.on_realloc(robots, balls_sim, t, gmm)
+            if gmm is not None:
+                _drop_cross_component_targets(robots, balls_sim, gmm, claimed)
+                claimed.clear()
             last_realloc = t
 
         spawned = ball_stream.step(dt)
@@ -175,6 +178,27 @@ def _collect_nearby_balls(
             claimed.discard(ball.ball_id)
             if robot.target_ball_id == ball.ball_id:
                 robot.target_ball_id = None
+
+
+def _drop_cross_component_targets(
+    robots: list[Robot],
+    balls: list[Ball],
+    gmm,
+    claimed: set[int],
+) -> None:
+    """Keep useful targets, but release targets that moved outside robot's macro mode."""
+    for robot in robots:
+        if robot.target_ball_id is None or robot.gmm_component is None:
+            continue
+        ball = balls[robot.target_ball_id]
+        if ball.collected:
+            robot.target_ball_id = None
+            claimed.discard(ball.ball_id)
+            continue
+        label = int(gmm.predict(np.array([[ball.x, ball.y]], dtype=float))[0])
+        if label != robot.gmm_component:
+            claimed.discard(ball.ball_id)
+            robot.target_ball_id = None
 
 
 def _move_robot(
@@ -276,17 +300,11 @@ def _assign_with_claims(
             continue
         # During CPP: opportunistically grab nearby balls before next waypoint
         if robot.waypoint_queue and not robot.coverage_complete:
-            near = [
-                b
-                for b in available
-                if abs(b.x - robot.x) + abs(b.y - robot.y) < 15.0
-            ]
-            if near:
-                ball = assigner.pick_ball(robot, near, anchors)
-                if ball is not None:
-                    robot.target_ball_id = ball.ball_id
-                    claimed.add(ball.ball_id)
-                    available.remove(ball)
+            ball = assigner.pick_ball(robot, available, anchors)
+            if ball is not None:
+                robot.target_ball_id = ball.ball_id
+                claimed.add(ball.ball_id)
+                available.remove(ball)
             continue
         ball = assigner.pick_ball(robot, available, anchors)
         if ball is None:

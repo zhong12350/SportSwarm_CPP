@@ -15,16 +15,27 @@ def spawn_players(court: Court, cfg: PlayerConfig, rng: np.random.Generator) -> 
     players: list[Player] = []
     for i in range(cfg.count):
         x = rng.uniform(x_min + 5, x_max - 5)
-        if cfg.sideline == "bottom":
+        if cfg.sideline == "field":
+            y = rng.uniform(y_min + 5, y_max - 5)
+            angle = rng.uniform(-np.pi, np.pi)
+            vx = cfg.speed_mps * np.cos(angle)
+            vy = cfg.speed_mps * np.sin(angle)
+        elif cfg.sideline == "middle":
+            y = rng.uniform(y_min + 0.35 * (y_max - y_min), y_min + 0.65 * (y_max - y_min))
+            vx = cfg.speed_mps * (1 if rng.random() > 0.5 else -1)
+            vy = 0.3 * cfg.speed_mps * (1 if rng.random() > 0.5 else -1)
+        elif cfg.sideline == "bottom":
             y = y_min + 0.5
+            vx = cfg.speed_mps * (1 if rng.random() > 0.5 else -1)
             vy = 0.0
         elif cfg.sideline == "top":
             y = y_max - 0.5
+            vx = cfg.speed_mps * (1 if rng.random() > 0.5 else -1)
             vy = 0.0
         else:
             y = y_min + 0.5 if i % 2 == 0 else y_max - 0.5
+            vx = cfg.speed_mps * (1 if rng.random() > 0.5 else -1)
             vy = 0.0
-        vx = cfg.speed_mps * (1 if rng.random() > 0.5 else -1)
         players.append(
             Player(
                 player_id=i,
@@ -47,12 +58,13 @@ def collision_cost(
     pos: tuple[float, float],
     players: list[Player],
     robot_radius: float = 0.3,
+    safety_margin_m: float = 1.2,
 ) -> float:
     cost = 0.0
     for p in players:
         d = euclidean(pos, (p.x, p.y)) - p.radius_m - robot_radius
-        if d < 0:
-            cost += (-d) ** 2
+        if d < safety_margin_m:
+            cost += (safety_margin_m - d) ** 2
     return cost
 
 
@@ -77,7 +89,7 @@ def cvar_best_direction(
     step_len = min(speed * dt, dist)
 
     candidates = [desired]
-    for angle in np.linspace(-np.pi / 3, np.pi / 3, 7):
+    for angle in np.linspace(-2 * np.pi / 3, 2 * np.pi / 3, 13):
         c, s = np.cos(angle), np.sin(angle)
         rot = np.array([[c, -s], [s, c]])
         candidates.append(rot @ desired)
@@ -92,7 +104,7 @@ def cvar_best_direction(
         for _ in range(cfg.num_scenarios):
             scenario_players = _sample_player_scenarios(players, cfg, rng)
             costs.append(
-                collision_cost(end, scenario_players, robot_radius)
+                cfg.collision_penalty * collision_cost(end, scenario_players, robot_radius)
                 + 0.1 * euclidean(end, target)
             )
         costs_arr = np.array(costs)
