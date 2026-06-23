@@ -31,17 +31,23 @@ def _map_to_court(x_sb: float, y_sb: float, court: Court) -> tuple[float, float]
     return court.clip(x, y)
 
 
-def _load_events_from_dir(data_dir: Path) -> list[dict]:
+def _load_events_from_dir(data_dir: Path, verbose: bool = False) -> list[dict]:
     events: list[dict] = []
     if not data_dir.exists():
         return events
-    for path in sorted(data_dir.glob("*.json")):
+    paths = sorted(data_dir.glob("*.json"))
+    total = len(paths)
+    for i, path in enumerate(paths, start=1):
         with path.open("r", encoding="utf-8") as f:
             payload = json.load(f)
         if isinstance(payload, list):
             events.extend(payload)
         elif isinstance(payload, dict) and "events" in payload:
             events.extend(payload["events"])
+        if verbose and (i == 1 or i % 200 == 0 or i == total):
+            print(f"  Loading events: {i}/{total} files...", flush=True)
+    if verbose and total:
+        print(f"  Loaded {len(events):,} events from {total} files.", flush=True)
     return events
 
 
@@ -72,8 +78,10 @@ def build_blf_from_statsbomb(
 ) -> BallLandingField:
     """Build BLF from StatsBomb JSON events; fall back to Gaussian if no data."""
     cell = cell_size or cfg.grid_cell_m or 1.0
-    events = _load_events_from_dir(cfg.statsbomb_dir)
+    print(f"Building BLF from {cfg.statsbomb_dir} ...", flush=True)
+    events = _load_events_from_dir(cfg.statsbomb_dir, verbose=True)
     if not events:
+        print("  No events found; falling back to Gaussian BLF.", flush=True)
         return build_blf(court, cfg, cell_size=cell)
 
     nx = max(1, int(np.ceil(court.width_m / cell)))
@@ -108,6 +116,7 @@ def build_blf_from_statsbomb(
     if cfg.normalize and blf.max() > 0:
         blf /= blf.max()
 
+    print(f"  BLF grid: {blf.shape}, out events accumulated.", flush=True)
     return BallLandingField(values=blf, x_coords=x_coords, y_coords=y_coords)
 
 

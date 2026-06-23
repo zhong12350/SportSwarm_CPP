@@ -32,7 +32,9 @@ def main() -> int:
     config.blf.tactical_style = args.style
 
     court = build_court(config.court)
+    print("Reading StatsBomb events (4235 files, may take 3–10 min)...", flush=True)
     blf = build_blf_field(court, config.blf, cell_size=config.court.cell_size_m)
+    print("Rendering figure...", flush=True)
 
     out = ROOT / args.output
     out.parent.mkdir(parents=True, exist_ok=True)

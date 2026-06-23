@@ -5,8 +5,8 @@ court:
   cell_size_m: 1.0
 
 blf:
-  source: hybrid
-  statsbomb_dir: data/statsbomb_sample
+  source: statsbomb
+  statsbomb_dir: data/statsbomb/data/events
   tactical_style: all
   gaussians:
     - center: [55.0, 8.0]
