@@ -13,7 +13,7 @@
 |------|--------|
 | **问题** | 40 颗球散落在场边，多台机器人要全部捡完 |
 | **BLF** | Ball-Landing Field：热力图，红色 = 球更常落下的区域 |
-| **Baseline** | 单机/多机「抢最近那颗球」（Tennibot 思路） |
+| **Baseline** | 单机/多机 greedy、centralized Hungarian、Voronoi、CPP |
 | **我们的亮点** | 用 BLF 决定**初始部署** + GMM 宏观重分配 + CVaR 避人 |
 | **怎么验证** | 同一批球位置（固定 seed），比清场时间、总路径、Pareto 曲线 |
 
@@ -101,11 +101,14 @@ python3 main.py configs/tennis_court.yaml
 # StatsBomb → BLF 热力图（进攻/防守风格）
 python3 scripts/blf_from_statsbomb.py --style offensive
 
-# 10-seed 批量实验 → batch_results.csv
+# 10-seed 批量实验 → batch_results.csv + batch_summary.csv
 python3 scripts/run_batch.py
 
 # 5 组消融实验 → ablation_results.csv
 python3 scripts/run_ablation.py
+
+# 导出 ROS/Gazebo 轨迹回放用 waypoint CSV
+python3 scripts/export_ros_waypoints.py configs/football_full.yaml
 ```
 
 依赖：Python 3.10+，`numpy`, `matplotlib`, `PyYAML`, `scipy`, `scikit-learn`（见 `requirements.txt`）。
@@ -118,6 +121,7 @@ python3 scripts/run_ablation.py
 |------|------|----------|
 | `single_greedy` | 单机最近球贪心 | Tennibot baseline |
 | `multi_greedy` | 多机各自抢最近未分配球 | 朴素多机 |
+| `hungarian_assignment` | 每轮 centralized Hungarian matching | 更强的一步最优分配 baseline |
 | `uniform_cpp` | Boustrophedon 网格覆盖 +  opportunistic 捡球 | 经典 CPP |
 | `blf_weighted_cpp` | 高 BLF 区优先覆盖顺序 | 数据驱动 CPP |
 | `voronoi_assignment` | Voronoi 分区 + 最近球 | MDCPP 2025 |
@@ -134,6 +138,11 @@ python3 scripts/run_ablation.py
 | `clearance_rate` | 捡球完成比例 |
 | `total_cost` | N × 单机成本（买 N 台车的代价） |
 | `cost_efficiency` | clearance / cost（性价比） |
+| `min_player_clearance_m` | 人机之间最小净距离（仅启用 player/CVaR 时有意义） |
+| `safety_violation_count` | 低于安全距离的 robot-player step 计数 |
+| `collision_count` | 净距离小于 0 的碰撞计数 |
+
+批量实验会额外输出 `outputs/results/batch_summary.csv`，按 `(court, method, N)` 聚合多 seed 的均值、标准差、样本数，以及相对 `multi_greedy` 的时间提升百分比。主实验还会输出 `outputs/results/data_report.json`，用于检查当前结果到底来自真实 StatsBomb 事件，还是回退到了 Gaussian BLF。
 
 ---
 
@@ -146,13 +155,16 @@ python3 scripts/run_ablation.py
 | 战术风格 BLF（进攻/防守） | ✅ | `blf.tactical_style` |
 | 球事件：uniform / BLF / semi-Markov | ✅ | `src/ball_events.py` |
 | GB-greedy / Uniform CPP / BLF-weighted CPP | ✅ | `src/coverage.py`, `src/assigners.py` |
+| Centralized Hungarian matching baseline | ✅ | `HungarianAssigner` |
 | MDCPP-style Voronoi | ✅ | `voronoi_assignment` |
 | BLF-informed 部署（Lloyd） | ✅ | `src/deployment.py` |
 | GMM 宏观重分配（SwarmPRM-lite） | ✅ | `src/gmm.py` |
 | CVaR 避人（SportSwarm-full） | ✅ | `src/cvar_planner.py` |
+| 安全指标（最小距离 / violation / collision） | ✅ | `SimResult`, `RunMetrics` |
 | N ∈ {1,2,4,8} + Pareto 曲线 | ✅ | `plot_pareto`, `metrics.pareto_front` |
-| 10-seed batch 实验 | ✅ | `scripts/run_batch.py` |
+| 10-seed batch 实验 + 统计汇总 | ✅ | `scripts/run_batch.py`, `batch_summary.csv` |
 | 5 组消融实验 | ✅ | `scripts/run_ablation.py` |
+| ROS/Gazebo waypoint 导出 | ✅ | `scripts/export_ros_waypoints.py` |
 
 ---
 
@@ -201,6 +213,10 @@ SportSwarm_CPP_Demo/
 - 接入 StatsBomb Open Data 完整赛季
 - 世界杯 2022 case study overlay 图
 - SwarmPRM 完整 PRM 微观路径（当前为 2D 几何仿真）
+
+## 面向论文级工作的差距
+
+当前仓库已经补上了更强 baseline、多 seed 统计汇总、真实数据来源报告、安全指标和 ROS/Gazebo 轨迹导出接口；但它仍应被表述为 **research prototype**，不是成熟顶刊工作。若要继续冲高水平论文，下一步需要把 `data_report.json` 中的 `effective_source` 变成真实 StatsBomb 数据，加入更强的 VRP/MPC/PRM/RRT* baseline，在 Gazebo 或真实机器人上复现实验，并把 BLF/GMM/CVaR 的理论假设与适用边界写成明确命题。
 
 ## 引用
 

@@ -4,6 +4,8 @@ from __future__ import annotations
 
 from abc import ABC, abstractmethod
 
+import numpy as np
+from scipy.optimize import linear_sum_assignment
 from sklearn.mixture import GaussianMixture
 
 from src.coverage import init_coverage_paths
@@ -35,6 +37,16 @@ class BaseAssigner(ABC):
         gmm: GaussianMixture | None = None,
     ) -> None:
         """Optional periodic reassignment hook."""
+
+    def assign_targets(
+        self,
+        robots: list[Robot],
+        available: list[Ball],
+        claimed: set[int],
+        anchors: list[tuple[float, float]],
+    ) -> bool:
+        """Optional batch assignment hook for centralized baselines."""
+        return False
 
     @abstractmethod
     def pick_ball(
@@ -98,6 +110,53 @@ class VoronoiAssigner(BaseAssigner):
         ]
         pool = owned if owned else available
         return min(pool, key=lambda b: manhattan((robot.x, robot.y), (b.x, b.y)))
+
+
+class HungarianAssigner(BaseAssigner):
+    @property
+    def method_name(self) -> str:
+        return "hungarian_assignment"
+
+    def assign_targets(
+        self,
+        robots: list[Robot],
+        available: list[Ball],
+        claimed: set[int],
+        anchors: list[tuple[float, float]],
+    ) -> bool:
+        idle = [
+            robot
+            for robot in robots
+            if robot.target_ball_id is None
+            and not (robot.waypoint_queue and not robot.coverage_complete)
+        ]
+        if not idle or not available:
+            return False
+
+        cost = np.array(
+            [
+                [manhattan((robot.x, robot.y), (ball.x, ball.y)) for ball in available]
+                for robot in idle
+            ],
+            dtype=float,
+        )
+        row_idx, col_idx = linear_sum_assignment(cost)
+        for r_i, b_i in zip(row_idx, col_idx):
+            robot = idle[int(r_i)]
+            ball = available[int(b_i)]
+            robot.target_ball_id = ball.ball_id
+            claimed.add(ball.ball_id)
+        return True
+
+    def pick_ball(
+        self,
+        robot: Robot,
+        available: list[Ball],
+        anchors: list[tuple[float, float]],
+    ) -> Ball | None:
+        if not available:
+            return None
+        return min(available, key=lambda b: manhattan((robot.x, robot.y), (b.x, b.y)))
 
 
 class BLFInformedAssigner(MultiGreedyAssigner):
@@ -237,6 +296,7 @@ ASSIGNER_REGISTRY: dict[str, type[BaseAssigner]] = {
     "single_greedy": SingleGreedyAssigner,
     "gb_greedy": SingleGreedyAssigner,
     "multi_greedy": MultiGreedyAssigner,
+    "hungarian_assignment": HungarianAssigner,
     "voronoi_assignment": VoronoiAssigner,
     "mdcpp_voronoi": VoronoiAssigner,
     "blf_informed_deployment": BLFInformedAssigner,

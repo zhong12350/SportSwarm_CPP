@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import csv
+import json
 import os
 import sys
 from copy import deepcopy
@@ -15,7 +16,7 @@ from src.config_loader import AppConfig, load_config
 from src.geometry import build_court
 from src.metrics import RunMetrics, evaluate_all
 from src.simulator import SimResult, run_all_experiments
-from src.statsbomb_blf import build_blf_field
+from src.statsbomb_blf import build_blf_field, summarize_blf_source
 from src.visualization import (
     plot_blf_gain,
     plot_comparison,
@@ -79,6 +80,10 @@ def run_pipeline(config: AppConfig, project_root: Path | None = None) -> tuple[l
     _write_csv(metrics, csv_path)
     print(f"  saved {csv_path.relative_to(root)}")
 
+    data_report_path = results_dir / "data_report.json"
+    _write_data_report(config, data_report_path)
+    print(f"  saved {data_report_path.relative_to(root)}")
+
     _print_summary(metrics)
     return results, metrics
 
@@ -91,6 +96,21 @@ def _write_csv(metrics: list[RunMetrics], path: Path) -> None:
         writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
         writer.writeheader()
         writer.writerows(rows)
+
+
+def _write_data_report(config: AppConfig, path: Path) -> None:
+    report = summarize_blf_source(config.blf)
+    report.update(
+        {
+            "ball_mode": config.balls.mode,
+            "court_preset": config.court.preset,
+            "seed": config.seed,
+            "methods": config.methods,
+        }
+    )
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("w", encoding="utf-8") as f:
+        json.dump(report, f, indent=2)
 
 
 def _print_summary(metrics: list[RunMetrics]) -> None:

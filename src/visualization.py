@@ -16,6 +16,7 @@ METHOD_LABELS = {
     "single_greedy": "Single Greedy (Tennibot)",
     "gb_greedy": "GB-Greedy",
     "multi_greedy": "Multi Greedy",
+    "hungarian_assignment": "Hungarian Assignment",
     "voronoi_assignment": "Voronoi (MDCPP-style)",
     "mdcpp_voronoi": "MDCPP Voronoi",
     "blf_informed_deployment": "BLF-Informed Deployment",

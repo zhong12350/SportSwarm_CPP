@@ -26,7 +26,11 @@ def main() -> int:
         print(f"Batch run | config: {config_path} | seeds: {config.experiment.batch_seeds}")
         metrics = run_batch(config, ROOT)
 
-    print(f"Completed {len(metrics)} runs → outputs/results/batch_results.csv")
+    print(
+        "Completed "
+        f"{len(metrics)} runs → outputs/results/batch_results.csv "
+        "+ outputs/results/batch_summary.csv"
+    )
     return 0
 
 

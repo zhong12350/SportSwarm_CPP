@@ -61,6 +61,7 @@ cvar:
 methods:
   - single_greedy
   - multi_greedy
+  - hungarian_assignment
   - uniform_cpp
   - blf_weighted_cpp
   - voronoi_assignment

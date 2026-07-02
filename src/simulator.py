@@ -31,6 +31,9 @@ class SimResult:
     robots: list[Robot]
     balls: list[Ball]
     players: list[Player] = field(default_factory=list)
+    min_player_clearance_m: float = float("inf")
+    safety_violation_count: int = 0
+    collision_count: int = 0
 
 
 def deploy_robots(
@@ -72,9 +75,7 @@ def run_simulation(
     assigner = create_assigner(method)
     assigner.on_init(robots, court, blf, len(robots))
 
-    players = spawn_players(court, config.players, rng) if (
-        config.players.enabled and method == "sportswarm_full"
-    ) else []
+    players = spawn_players(court, config.players, rng) if config.players.enabled else []
     use_cvar = cvar_cfg.enabled and method == "sportswarm_full" and bool(players)
     use_gmm = method in ("gmm_swarm", "sportswarm_full")
 
@@ -85,6 +86,9 @@ def run_simulation(
     pickup_r = robots_cfg.pickup_radius_m
     last_realloc = -sim_cfg.gmm_realloc_interval_s
     gmm = None
+    min_player_clearance = float("inf")
+    safety_violation_count = 0
+    collision_count = 0
 
     def _is_done() -> bool:
         if ball_stream.is_streaming:
@@ -127,6 +131,12 @@ def run_simulation(
             _collect_nearby_balls(robot, balls_sim, pickup_r, claimed)
             any_moved = any_moved or moved
 
+        safety = _evaluate_player_safety(robots, players)
+        if safety is not None:
+            min_player_clearance = min(min_player_clearance, safety[0])
+            safety_violation_count += safety[1]
+            collision_count += safety[2]
+
         if not any_moved and not _is_done():
             for robot in robots:
                 robot.target_ball_id = None
@@ -161,6 +171,9 @@ def run_simulation(
         robots=robots,
         balls=balls_sim,
         players=players,
+        min_player_clearance_m=min_player_clearance,
+        safety_violation_count=safety_violation_count,
+        collision_count=collision_count,
     )
 
 
@@ -295,6 +308,9 @@ def _assign_with_claims(
 
     available = [b for b in balls if not b.collected and b.ball_id not in claimed]
 
+    if assigner.assign_targets(robots, available, claimed, anchors):
+        available = [b for b in available if b.ball_id not in claimed]
+
     for robot in robots:
         if robot.target_ball_id is not None:
             continue
@@ -312,6 +328,28 @@ def _assign_with_claims(
         robot.target_ball_id = ball.ball_id
         claimed.add(ball.ball_id)
         available.remove(ball)
+
+
+def _evaluate_player_safety(
+    robots: list[Robot],
+    players: list[Player],
+    robot_radius_m: float = 0.3,
+    safety_margin_m: float = 1.2,
+) -> tuple[float, int, int] | None:
+    if not players:
+        return None
+    min_clearance = float("inf")
+    violations = 0
+    collisions = 0
+    for robot in robots:
+        for player in players:
+            clearance = euclidean((robot.x, robot.y), (player.x, player.y)) - robot_radius_m - player.radius_m
+            min_clearance = min(min_clearance, clearance)
+            if clearance < safety_margin_m:
+                violations += 1
+            if clearance < 0:
+                collisions += 1
+    return min_clearance, violations, collisions
 
 
 def run_all_experiments(
