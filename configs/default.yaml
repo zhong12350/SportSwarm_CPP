@@ -45,6 +45,7 @@ cvar:
 methods:
   - single_greedy
   - multi_greedy
+  - hungarian_assignment
   - voronoi_assignment
   - blf_informed_deployment
 

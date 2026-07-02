@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
+from typing import Any
 
 import numpy as np
 
@@ -227,3 +228,46 @@ def build_blf_field(
             combined /= combined.max()
         return BallLandingField(values=combined, x_coords=sb.x_coords, y_coords=sb.y_coords)
     return build_blf(court, cfg, cell_size=cell_size)
+
+
+def summarize_blf_source(cfg: BLFConfig) -> dict[str, Any]:
+    """Report whether a run is backed by real StatsBomb files or a synthetic BLF."""
+    report: dict[str, Any] = {
+        "configured_source": cfg.source,
+        "effective_source": cfg.source,
+        "statsbomb_dir": str(cfg.statsbomb_dir),
+        "statsbomb_dir_exists": cfg.statsbomb_dir.exists(),
+        "json_files": 0,
+        "out_events": 0,
+        "tactical_style": cfg.tactical_style,
+        "fallback_reason": None,
+    }
+    if cfg.source not in ("statsbomb", "hybrid"):
+        return report
+
+    if not cfg.statsbomb_dir.exists():
+        report["effective_source"] = "gaussian_fallback"
+        report["fallback_reason"] = "statsbomb_dir_missing"
+        return report
+
+    paths = sorted(cfg.statsbomb_dir.glob("*.json"))
+    report["json_files"] = len(paths)
+    if not paths:
+        report["effective_source"] = "gaussian_fallback"
+        report["fallback_reason"] = "no_json_files"
+        return report
+
+    out_events = 0
+    for path in paths:
+        for event in _iter_event_lists(path):
+            if not _is_out_event(event):
+                continue
+            if cfg.tactical_style in ("offensive", "defensive"):
+                if _event_style(event) != cfg.tactical_style:
+                    continue
+            out_events += 1
+    report["out_events"] = out_events
+    if out_events == 0:
+        report["effective_source"] = "gaussian_fallback"
+        report["fallback_reason"] = "no_matching_out_events"
+    return report

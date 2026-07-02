@@ -20,6 +20,9 @@ class RunMetrics:
     distance_per_ball: float
     total_cost: float
     cost_efficiency: float  # clearance / cost
+    min_player_clearance_m: float | None
+    safety_violation_count: int
+    collision_count: int
     seed: int = 0
     court_preset: str = "football_7v7"
 
@@ -46,6 +49,13 @@ def evaluate_result(result: SimResult, seed: int = 0, court_preset: str = "footb
         distance_per_ball=dist_per_ball,
         total_cost=result.total_cost,
         cost_efficiency=cost_eff,
+        min_player_clearance_m=(
+            result.min_player_clearance_m
+            if result.min_player_clearance_m != float("inf")
+            else None
+        ),
+        safety_violation_count=result.safety_violation_count,
+        collision_count=result.collision_count,
         seed=seed,
         court_preset=court_preset,
     )
